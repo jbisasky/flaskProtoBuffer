@@ -1,0 +1,16 @@
+syntax='proto3';
+import 'google/protobuf/timestamp.proto';
+package calendar;
+
+message Customer {
+  int32 id = 1;
+  google.protobuf.Timestamp timestamp = 2;
+}
+
+message Tail {
+  string tailNumber = 1;
+}
+
+message CustomerTailList {
+  repeated Tail tail = 1;
+}
